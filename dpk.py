@@ -8,7 +8,7 @@ from multiprocessing import Pool, Process
 from ffmpy import FFmpeg
 import time, random, asyncio, timeit, sys, json, codecs, threading, glob, re, string, os, requests, subprocess, six, urllib, urllib.parse, ast, pytz, wikipedia, pafy, youtube_dl, atexit
 
-print ("\n\n ---  START LOGIN TO ✍Ð₱₭ ฿Ø₮ ---\n")
+print ("\n\n ---  START LOGIN TO ✍ ฿Ø₮ ---\n")
 
 #cl = LINE()
 cl = LINE(authTokenDPK="EvHkngrC42BFD7piAiVb.0PzLwS72Fl1EGGJMnIN3IW.n1DfgexSLbx0SRcKLvwEWA8jyBVMUfSlPX4gVqF3Bf4=")
@@ -34,7 +34,7 @@ line3.log("YOUR TOKEN : {}".format(str(line3.authToken)))
 channel = LINEChannel(line3,line3.server.CHANNEL_ID['LINE_TIMELINE'])
 line3.log("CHANNEL TOKEN : " + str(channel.getChannelResult()))
 
-print ("✍Ð₱₭ ฿Ø₮ LOGIN SUCCESS")
+print ("✍ ฿Ø₮ LOGIN SUCCESS")
 
 clProfile = cl.getProfile()
 clSettings = cl.getSettings()
@@ -46,7 +46,7 @@ MID1 = line1.profile.mid
 MID2 = line2.profile.mid
 MID3 = line3.profile.mid
 DpkBot=[mid,MID1,MID2,MID3]
-Owner=["ud296655acef67cbd5e8208e63629f78b","u65224f4e8812136f01b25275a54b5aef"]
+Owner=["u536c7b4d0985b91bcf2628b39e089053"]
 DPKfams = DpkBot + Dpk + Owner
 
 contact = cl.getProfile()
@@ -59,7 +59,7 @@ Wait = {
     "UnsendPesan":True,
     "SpamInvite":False,
     "Contact":False,
-    "GName":"ARIFISTIFIK",
+    "GName":"Nugi",
     "AutoRespon":True,
     "DpkRespon":"dîh ηgëtåg äķü mülü... Kămư kë§ëÞîåη ¥åk...???",
     "KickRespon":False,
@@ -100,8 +100,8 @@ Wait = {
     "Unban":False,
     "AddMention":True,
     "Admin": {
-        "ud296655acef67cbd5e8208e63629f78b":True,  #MID ADMIN
-        "u65224f4e8812136f01b25275a54b5aef":True
+        "u536c7b4d0985b91bcf2628b39e089053":True,  #MID ADMIN
+        "u536c7b4d0985b91bcf2628b39e089053":True
     },
 }
 
@@ -1389,7 +1389,7 @@ def LINE_FAST_USER(arif):
                                     wi = wi + 1
                                     end = '\n'
                                     fams += str(wi) + ". " +cl.getContact(m_id).displayName + "\n"
-                                cl.sendText(kirim,"DPK FAMS\n\nOwner:\n"+dpk+"\nAdmin:\n"+fams+"\n( %s ) TEAM FAMS" %(str(len(Owner)+len(Wait["Admin"]))))                                
+                                cl.sendText(kirim,"PEKOK TEAM\n\nOwner:\n"+dpk+"\nAdmin:\n"+fams+"\n( %s ) TEAM PEKOK" %(str(len(Owner)+len(Wait["Admin"]))))                                
 
                         elif dpkText.lower() == "dpk join":
                             if user in DPKfams or user in Wait["Admin"]:
@@ -1410,7 +1410,7 @@ def LINE_FAST_USER(arif):
                         elif dpkText.lower() == "dpk bye":
                             if user in DPKfams or user in Wait["Admin"]:
                                 ginfo = cl.getGroup(kirim)
-                                owner = "ud296655acef67cbd5e8208e63629f78b"
+                                owner = "u536c7b4d0985b91bcf2628b39e089053"
                                 line1.mentionWithDPK(kirim,owner," Oke ","\n Good Bye" + str(" ("+ginfo.name+")"))
                                 line3.leaveGroup(kirim)
                                 line2.leaveGroup(kirim)
@@ -1824,7 +1824,7 @@ def LINE_FAST_USER(arif):
                                     for x in range(len(cmem)):
                                         xname = str(cmem[x].displayName)
                                         pesan = ''
-                                        pesan2 = pesan+"@ARIFISTIFIK \n"
+                                        pesan2 = pesan+"@NUGI PEKOK \n"
                                         xlen = str(len(zxc)+len(xpesan))
                                         xlen2 = str(len(zxc)+len(pesan2)+len(xpesan)-1)
                                         zx = {'S':xlen, 'E':xlen2, 'M':cmem[x].mid}
@@ -1924,13 +1924,13 @@ def LINE_FAST_USER(arif):
                             if user in DPKfams or user in Wait["Admin"]:
                                 eltime = time.time() - mulai                                
                                 opn = " "+waktu(eltime)
-                                cl.sendText(kirim,"Connect to DPK FAMS\nBot Active\n" + opn)                
+                                cl.sendText(kirim,"Connect to PEKOK FAMS\nBot Active\n" + opn)                
 
                         elif "Broadcast: " in dpkText:
                             if user in DPKfams or user in Wait["Admin"]:
                                 bc = msg.text.replace("Broadcast: ","")
                                 gid = cl.getGroupIdsJoined()
-                                owner = "ud296655acef67cbd5e8208e63629f78b"
+                                owner = "u536c7b4d0985b91bcf2628b39e089053"
                                 for i in gid:
                                     cl.mentionWithDPK(i,owner," BROADCAST BY:","\n" + str(" ("+bc+")"))
 
@@ -1938,7 +1938,7 @@ def LINE_FAST_USER(arif):
                             if user in DPKfams or user in Wait["Admin"]:
                                 bc = msg.text.replace("Contactbc: ","")
                                 gid = cl.getAllContactIds()
-                                owner = "ud296655acef67cbd5e8208e63629f78b"
+                                owner = "u536c7b4d0985b91bcf2628b39e089053"
                                 for i in gid:
                                     cl.mentionWithDPK(i,owner," BROADCAST BY:","\n" + str(" ("+bc+")"))
 
@@ -1983,7 +1983,7 @@ def LINE_FAST_USER(arif):
                                 cll = cl.getProfile()
                                 cll.displayName = change
                                 cl.updateProfile(cll)
-                                owner = "ud296655acef67cbd5e8208e63629f78b"
+                                owner = "u536c7b4d0985b91bcf2628b39e089053"
                                 cl.mentionWithDPK(kirim,owner," Update Name Success","\n Change to " + str(change))
 
                         elif "changebio: " in dpkText.lower():
@@ -2045,7 +2045,7 @@ def LINE_FAST_USER(arif):
                                     line2.removeAllMessages(arif.param2)
                                     line3.removeAllMessages(arif.param2)
                                     ginfo = cl.getGroup(kirim)
-                                    owner = "ud296655acef67cbd5e8208e63629f78b"
+                                    owner = "u536c7b4d0985b91bcf2628b39e089053"
                                     cl.mentionWithDPK(kirim,owner," Remove Message Success ","\n In Grup" + str(" ("+ginfo.name+")"))
                                     line1.mentionWithDPK(kirim,owner," Remove Message Success ","\n In Grup" + str(" ("+ginfo.name+")"))
                                     line2.mentionWithDPK(kirim,owner," Remove Message Success ","\n In Grup" + str(" ("+ginfo.name+")"))
