@@ -2,8 +2,8 @@
 
 HOW TO RUN VIA VPS ( VIRTUAL PRIVATE SERVER )
 1. sudo apt-get install git
-2. git clone https://github.com/arifistifik/dpk
-3. sudo apt-get python3-pip
+2. git clone https://github.com/nugsazz/nugi.pekok
+3. sudo apt-get python3 - pip
 4. pip3 install rsa
 5. pip3 install requests
 6. pip3 install googletrans
@@ -25,7 +25,7 @@ HOW TO RUN VIA VPS ( VIRTUAL PRIVATE SERVER )
 HOW TO RUN VIA TERMUX ( TERMINAL LINUX )
 1. pkg install git
 2. pkg install akad
-3. git clone https://github.com/arifistifik/dpk
+3. git clone https://github.com/nugsazz/nugi.pekok
 4. pkg install python3-pip
 5. pip3 install rsa
 6. pip3 install requests
