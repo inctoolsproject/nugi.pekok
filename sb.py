@@ -8,7 +8,7 @@ from multiprocessing import Pool, Process
 from ffmpy import FFmpeg
 import time, random, asyncio, timeit, sys, json, codecs, threading, glob, re, string, os, requests, subprocess, six, urllib, urllib.parse, ast, pytz, wikipedia, pafy, youtube_dl, atexit
 
-print ("\n\n ---  WELCOME TO ✍Ð₱₭ ฿Ø₮₰ ⃟🇮🇩􏿿  ---\n")
+print ("\n\n ---  WELCOME TO ✍PEKOK ฿Ø₮₰⃟E🇮🇩􏿿  ---\n")
 
 cl = LINE()
 #cl = LINE(authTokenDPK="YOUR TOKEN")
@@ -16,7 +16,7 @@ cl.log("YOUR TOKEN : {}".format(str(cl.authToken)))
 channel = LINEChannel(cl,cl.server.CHANNEL_ID['LINE_TIMELINE'])
 cl.log("CHANNEL TOKEN : " + str(channel.getChannelResult()))
 
-print ("✍Ð₱₭ ฿Ø₮₰ ⃟🇮🇩􏿿LOGIN SUCCESS")
+print ("✍Pekok ฿Ø₮₰⃟e🇮🇩􏿿LOGIN SUCCESS")
 
 clProfile = cl.getProfile()
 clSettings = cl.getSettings()
@@ -25,7 +25,7 @@ LINE = LINEPoll(cl)
 Dpk = [cl]
 SELFBOT = cl.profile.mid
 DpkBot=[SELFBOT]
-Owner=["ud296655acef67cbd5e8208e63629f78b"]
+Owner=["u536c7b4d0985b91bcf2628b39e089053"]
 DPKfams = DpkBot + Dpk + Owner
 
 contact = cl.getProfile()
@@ -38,7 +38,7 @@ Wait = {
     "UnsendPesan":False,
     "SpamInvite":False,
     "Contact":False,
-    "GName":"ARIFISTIFIK",
+    "GName":"Nugi",
     "AutoRespon":False,
     "KickRespon":False,
     "KillOn":False,
@@ -77,7 +77,7 @@ Wait = {
     "Ban":False,
     "Unban":False,
     "Admin": {
-        "ud296655acef67cbd5e8208e63629f78b":True #MID ADMIN TARO DISINI
+        "u536c7b4d0985b91bcf2628b39e089053":True #MID ADMIN TARO DISINI
     },
 }
 
@@ -244,7 +244,7 @@ Help ="""╔═══════════════════
 ╠☬➣malaysia:
 ╠☬➣jawa:
 ╠═══════════════════
-╠☬➣  ✍Ð₱₭ ฿Ø₮₰ ⃟🇮🇩􏿿 ☬➣   ⏩
+╠☬➣  ✍ ฿Ø₮₰ ⃟🇮🇩􏿿 ☬➣   ⏩
 ╚═══════════════════
 """""
 
@@ -409,7 +409,7 @@ def LINE_FAST_USER(arif):
                               xpesan = 'Pengirim: '
                               ardian = str(dia.displayName)
                               pesan = ''
-                              pesan2 = pesan+"@ARDIAN_GANTENG\n"
+                              pesan2 = pesan+"@Nugi\n"
                               xlen = str(len(zxc)+len(xpesan))
                               xlen2 = str(len(zxc)+len(pesan2)+len(xpesan)-1)
                               zx = {'S':xlen, 'E':xlen2, 'M':dia.mid}
@@ -856,7 +856,7 @@ def LINE_FAST_USER(arif):
                         elif dpkText.lower() == "speed":
                             if user in DPKfams or user in Wait["Admin"]:
                                 no = time.time()
-                                cl.sendText("ud296655acef67cbd5e8208e63629f78b", ' ')
+                                cl.sendText("u536c7b4d0985b91bcf2628b39e089053", ' ')
                                 elapsed_time = time.time() - no
                                 cl.sendText(kirim, "%s" % (elapsed_time))
 
@@ -879,7 +879,7 @@ def LINE_FAST_USER(arif):
                                     wi = wi + 1
                                     end = '\n'
                                     fams += str(wi) + ". " +cl.getContact(m_id).displayName + "\n"
-                                cl.sendText(kirim,"ARIFISTIFIK\n\nOwner:\n"+dpk+"\nAdmin:\n"+fams+"\n( %s ) TEAM DRAGON" %(str(len(Owner)+len(Wait["Admin"]))))                                
+                                cl.sendText(kirim,"Team Pekok\n\nOwner:\n"+dpk+"\nAdmin:\n"+fams+"\n( %s ) TEAM PEKOK" %(str(len(Owner)+len(Wait["Admin"]))))                                
 
                         elif dpkText.lower() == "leaveall grup":
                             if user in DPKfams or user in Wait["Admin"]:
