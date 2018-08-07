@@ -1247,7 +1247,7 @@ def LINE_FAST_USER(arif):
                                     for x in range(len(cmem)):
                                         xname = str(cmem[x].displayName)
                                         pesan = ''
-                                        pesan2 = pesan+"@ARIFISTIFIK\n"
+                                        pesan2 = pesan+"@Team Pekok\n"
                                         xlen = str(len(zxc)+len(xpesan))
                                         xlen2 = str(len(zxc)+len(pesan2)+len(xpesan)-1)
                                         zx = {'S':xlen, 'E':xlen2, 'M':cmem[x].mid}
@@ -1347,7 +1347,7 @@ def LINE_FAST_USER(arif):
                             if user in DPKfams or user in Wait["Admin"]:
                                 eltime = time.time() - mulai                                
                                 opn = " "+waktu(eltime)
-                                cl.sendText(kirim,"Connect to ARIFISTIFIK\nBot Active\n" + opn)                
+                                cl.sendText(kirim,"Connect to Team Pekok\nBot Active\n" + opn)                
 
                         elif dpkText.lower().startswith("broadcast: "):
                             if user in DPKfams or user in Wait["Admin"]:
